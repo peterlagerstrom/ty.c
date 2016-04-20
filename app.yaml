@@ -1,0 +1,38 @@
+application: tyco-1286
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /favicon-32x32\.png
+  static_files: favicon-32x32.png
+  upload: favicon-32x32\.png
+
+- url: /favicon-96x96\.png
+  static_files: favicon-96x96.png
+  upload: favicon-96x96\.png
+
+- url: /favicon-16x16\.png
+  static_files: favicon-16x16.png
+  upload: favicon-16x16\.png
+
+- url: /butterfly\.svg
+  static_files: butterfly.svg
+  upload: butterfly\.svg
+
+- url: /googledce38e530879d696\.html
+  static_files: googledce38e530879d696.html
+  upload: googledce38e530879d696\.html
+
+- url: /robots\.txt
+  static_files: robots.txt
+  upload: robots\.txt
+
+- url: /.*
+  static_files: index.html
+  upload: index\.html
