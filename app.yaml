@@ -8,31 +8,39 @@ handlers:
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
+  expiration: "7d"
 
 - url: /favicon-32x32\.png
   static_files: favicon-32x32.png
   upload: favicon-32x32\.png
+  expiration: "7d"
 
 - url: /favicon-96x96\.png
   static_files: favicon-96x96.png
   upload: favicon-96x96\.png
+  expiration: "7d"
 
 - url: /favicon-16x16\.png
   static_files: favicon-16x16.png
   upload: favicon-16x16\.png
+  expiration: "7d"
 
 - url: /butterfly\.svg
   static_files: butterfly.svg
   upload: butterfly\.svg
+  expiration: "7d"
 
 - url: /googledce38e530879d696\.html
   static_files: googledce38e530879d696.html
   upload: googledce38e530879d696\.html
+  expiration: "7d"
 
 - url: /robots\.txt
   static_files: robots.txt
   upload: robots\.txt
+  expiration: "7d"
 
 - url: /.*
   static_files: index.html
   upload: index\.html
+  expiration: "3d"
