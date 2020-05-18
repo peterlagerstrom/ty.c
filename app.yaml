@@ -1,8 +1,4 @@
-application: tyco-1286
-version: 2
-runtime: python27
-api_version: 1
-threadsafe: yes
+runtime: nodejs12
 
 handlers:
 - url: /googledce38e530879d696\.html
@@ -11,6 +7,13 @@ handlers:
   expiration: "7d"
   secure: always
   redirect_http_response_code: 301
+  http_headers:
+    Content-Security-Policy: script-src 'self'
+    Referrer-Policy: no-referrer-when-downgrade
+    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    X-Frame-Options: 'SAMEORIGIN'
+    X-Content-Type-Options: 'nosniff'
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 - url: /robots\.txt
   static_files: robots.txt
@@ -18,6 +21,13 @@ handlers:
   expiration: "7d"
   secure: always
   redirect_http_response_code: 301
+  http_headers:
+    Content-Security-Policy: script-src 'self'
+    Referrer-Policy: no-referrer-when-downgrade
+    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    X-Frame-Options: 'SAMEORIGIN'
+    X-Content-Type-Options: 'nosniff'
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 - url: /favicon\.ico
   static_files: favicon.ico
@@ -25,6 +35,13 @@ handlers:
   expiration: "7d"
   secure: always
   redirect_http_response_code: 301
+  http_headers:
+    Content-Security-Policy: script-src 'self'
+    Referrer-Policy: no-referrer-when-downgrade
+    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    X-Frame-Options: 'SAMEORIGIN'
+    X-Content-Type-Options: 'nosniff'
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 - url: /favicon-32x32\.png
   static_files: favicon-32x32.png
@@ -32,6 +49,13 @@ handlers:
   expiration: "7d"
   secure: always
   redirect_http_response_code: 301
+  http_headers:
+    Content-Security-Policy: script-src 'self'
+    Referrer-Policy: no-referrer-when-downgrade
+    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    X-Frame-Options: 'SAMEORIGIN'
+    X-Content-Type-Options: 'nosniff'
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 - url: /favicon-96x96\.png
   static_files: favicon-96x96.png
@@ -39,6 +63,13 @@ handlers:
   expiration: "7d"
   secure: always
   redirect_http_response_code: 301
+  http_headers:
+    Content-Security-Policy: script-src 'self'
+    Referrer-Policy: no-referrer-when-downgrade
+    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    X-Frame-Options: 'SAMEORIGIN'
+    X-Content-Type-Options: 'nosniff'
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 - url: /favicon-16x16\.png
   static_files: favicon-16x16.png
@@ -46,6 +77,13 @@ handlers:
   expiration: "7d"
   secure: always
   redirect_http_response_code: 301
+  http_headers:
+    Content-Security-Policy: script-src 'self'
+    Referrer-Policy: no-referrer-when-downgrade
+    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    X-Frame-Options: 'SAMEORIGIN'
+    X-Content-Type-Options: 'nosniff'
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 - url: /butterfly\.svg
   static_files: butterfly.svg
@@ -53,6 +91,13 @@ handlers:
   expiration: "7d"
   secure: always
   redirect_http_response_code: 301
+  http_headers:
+    Content-Security-Policy: script-src 'self'
+    Referrer-Policy: no-referrer-when-downgrade
+    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    X-Frame-Options: 'SAMEORIGIN'
+    X-Content-Type-Options: 'nosniff'
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 - url: /.*
   static_files: index.html
@@ -60,3 +105,11 @@ handlers:
   expiration: "3d"
   secure: always
   redirect_http_response_code: 301
+  http_headers:
+    Content-Security-Policy: script-src 'self'
+    Referrer-Policy: no-referrer-when-downgrade
+    Feature-Policy: sync-xhr 'none'; camera 'none'; microphone 'none';
+    X-Frame-Options: 'SAMEORIGIN'
+    X-Content-Type-Options: 'nosniff'
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
+    
